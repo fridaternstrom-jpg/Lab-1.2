@@ -10,6 +10,7 @@ header {
     width: 100%;
     z-index: 1000;
     border-top: solid 1.2px rgb(98, 100, 102);
+    background-color: white;
 }
 
 nav ul {
@@ -44,11 +45,7 @@ nav a {
     font-size: 0.9em;
 }
 
-.topbar {
-    display: none;
-}
-
-.topbar.add{
+.topbar{
     position: sticky;
     display: flex;
     background-color: rgba(119, 136, 153, 0.801);
