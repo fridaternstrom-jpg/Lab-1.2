@@ -9,18 +9,30 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    border-top: solid 1.2px  rgb(98, 100, 102);
+    border-top: solid 1.2px rgb(98, 100, 102);
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
-    padding: 10px;
+    padding: 8px;
 }
 
 nav li {
      list-style: none;
+}
+
+.linkarea {
+    padding: 5px;
+}
+
+.linkarea:hover {
+    background-color: lightslategray;
+}
+
+nav a:hover {
+    color: white;
 }
 
 nav a {
@@ -30,4 +42,24 @@ nav a {
     flex-direction: column;
     align-items: center;
     font-size: 0.9em;
+}
+
+.topbar {
+    display: none;
+}
+
+.topbar.add{
+    position: sticky;
+    display: flex;
+    background-color: rgba(119, 136, 153, 0.801);
+    padding: 6px;
+}
+
+main {
+    background-color: rgba(255, 182, 193, 0.5);
+}
+
+#heroimg {
+    width: 100%;
+    height: auto;
 }
