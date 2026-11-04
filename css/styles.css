@@ -29,7 +29,7 @@ nav li {
 }
 
 .linkarea:hover {
-    background-color: lightslategray;
+    background-color: rgba(119, 136, 153, 0.801);
 }
 
 nav a:hover {
@@ -53,10 +53,37 @@ nav a {
 }
 
 main {
-    background-color: rgba(255, 182, 193, 0.5);
+    background-color: rgba(44, 102, 62, 0.425); 
+    font-family: "Ubuntu-medium", sans-serif;
+    font-weight: 500;
 }
 
 #heroimg {
     width: 100%;
     height: auto;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 80px;
+}
+
+#info h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#info p {
+    margin-top: 4px;
+    text-align: justify;
+}
+
+#imgbutton {
+    background-color: rgba(119, 136, 153, 0.801);
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+    width: 40%;
+    text-align: center;
 }
