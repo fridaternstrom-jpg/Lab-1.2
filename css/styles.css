@@ -15,6 +15,10 @@ header {
     background-color: white;
 }
 
+#logonav {
+    display:none;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -124,10 +128,13 @@ main {
     height: auto;
     border-radius: 10px;
     align-self: center;
+    justify-self: center;
+    max-width: 450px;
 }
 
 #preshow p {
     grid-column: 1/3;
+    justify-self: center;
 }
 
 .aboutbutton {
@@ -150,45 +157,36 @@ main {
 }
 
 @media (min-width: 1000px) {
-    .topbar {
-        display: none;
-    }
+    
+header {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
 
-    header {
-        position: sticky;
-        border-bottom: solid 1.2px rgb(98, 100, 102);
-    }
+.topbar {
+    display: none;
+}
 
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0;
-        padding: 8px;
-    }
+#logonav {
+    display: block;
+    width: 30%;
+    margin: 10px;
+}
 
-    nav li {
-        list-style: none;
-    }
+nav ul {
+    margin: 30px 0px 0px;
+}
 
-    .linkarea {
-        padding: 5px;
-    }
-
-    .linkarea:hover {
-        background-color: rgba(119, 136, 153, 0.801);
-    }
-
-    nav a:hover {
-        color: white;
-    }
-
+.linkarea {
+    justify-self: center;
+    border-radius: 10px;
+}
     nav a {
-        color: rgb(98, 100, 102);
-        text-decoration: none;
-        display: flex;
         flex-direction: row;
         gap: 5px;
-
         font-size: 1em;
+        padding: 10px 40px;
+        font-size: 1.2em;
     }
 }
