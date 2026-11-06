@@ -66,7 +66,7 @@ main {
 #info {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 80px;
+    padding: 20px 20px 50px;
 }
 
 #info h1 {
@@ -76,14 +76,32 @@ main {
 
 #info p {
     margin-top: 4px;
-    text-align: justify;
 }
 
 #imgbutton {
+    margin-top: 20px;
     background-color: rgba(119, 136, 153, 0.801);
     padding: 10px;
     border-radius: 10px;
     align-self: center;
     width: 40%;
     text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#preshow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.preshowimg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
 }
