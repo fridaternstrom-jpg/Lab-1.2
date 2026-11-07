@@ -264,3 +264,58 @@ nav ul {
 }
 
 }
+
+/* css för images-sidan */
+
+#pictureinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 50px;
+}
+
+#pictureinfo h1 {
+    align-self: center;
+}
+
+#pictureinfo p {
+    align-self: center;
+    max-width: 460px;
+}
+
+#realshow {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.realshowimg {
+    width: 90%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    max-width: 450px;
+}
+
+.images {
+    margin: 20px;
+    background-color: rgba(119, 136, 153, 0.801);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.topp {
+    margin: 20px 0px 0px 20px;
+    align-self: center;
+}
+
+.bottomp {
+    align-self: center;
+    margin: 0;
+}
+
+.imageul {
+    align-self: center;
+    margin-top: 0;
+}
