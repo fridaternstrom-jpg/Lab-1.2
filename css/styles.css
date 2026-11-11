@@ -5,6 +5,7 @@ body {
     font-weight: 500;
 }
 
+/* Navigation som är på botten i mobilvy */
 header {
     position: fixed;
     bottom: 0;
@@ -15,10 +16,12 @@ header {
     background-color: white;
 }
 
+/* Logga som läggs till i navigationen för större skärm */
 #logonav {
     display: none;
 }
 
+/* CSS för navigation */
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,6 +55,7 @@ nav a {
     font-size: 0.9em;
 }
 
+/* Bar i toppen istället för nav på mobil */
 .topbar {
     position: sticky;
     display: flex;
@@ -60,8 +64,19 @@ nav a {
     justify-content: space-between;
 }
 
+#logoimg {
+        display: block;
+        width: 100%;
+    }
+
+    #logotop {
+        align-self: start;
+        width: 15%;
+        margin: 5px;
+    }
+
 .topbar img {
-    width: 40%;
+    width: 100%;
 }
 
 .topbar p {
@@ -69,6 +84,7 @@ nav a {
     margin-right: 20px;
 }
 
+/* Här börjar huvudinnehållet */
 main {
     background-color: rgba(44, 102, 62, 0.425);
 }
@@ -159,20 +175,28 @@ main {
 
 @media (min-width: 1000px) {
 
+    /* Fäster navigationen längst upp istället */
     header {
         position: static;
         display: grid;
         grid-template-columns: 1fr 4fr;
     }
 
+    /* Döljer tillfällig top-bar */
     .topbar {
         display: none;
     }
 
-    #logonav {
+    /* Lägger till logga bredvid navigationen */
+#logonav {
         display: block;
-        width: 30%;
+        width: 100%;
         margin: 10px;
+    }
+
+    .logoarea {
+        width: 40%;
+        justify-self: start;
     }
 
     nav ul {
@@ -240,6 +264,7 @@ main {
     text-align: center;
     text-decoration: none;
     color: black;
+    width: 40%;
     max-width: 150px;
     margin-top: 40px;
     margin-bottom: 60px;
