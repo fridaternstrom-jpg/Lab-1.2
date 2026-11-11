@@ -35,6 +35,7 @@ nav li {
 }
 
 .linkarea:hover {
+    border-radius: 10px;
     background-color: rgba(119, 136, 153, 0.801);
 }
 
